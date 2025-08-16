@@ -1,4 +1,4 @@
-# 🚗 Parking Lot Management System
+# 🚗 Parking Lot System
 
 A scalable **Parking Lot Management System** built with **Java 8, JDBC, MySQL, Collections, Stream API, and Razorpay integration**.  
 This project is designed with clean architecture principles to simulate **real-world parking lot operations** (Entry, Exit, Admin management).
