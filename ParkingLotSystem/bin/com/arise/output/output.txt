@@ -1,0 +1,264 @@
+=== PARKING LOT LLD SIMULATION ===
+This simulation demonstrates the complete parking lot system flow
+
+[SERVICE] PaymentService initialized with default gatway: Razorpay
+[SERVICE] ReceiptService initialized
+[SERVICE] AdminService initialized
+[CONTROLLER] EntryController initialized
+[CONTROLLER] ExitController initialized
+[CONTROLLER] AdminController initialized
+=== INITIALIZATION PHASE ===
+[CONTROLLER] Admin Request to initialize parking lot
+[SERVICE] Initializing parking lot with default configuration
+[SERVICE] Adding floor with number: 0
+[SERVICE] Floor added successfully: 36f4da5a-2175-4be2-8ad9-f3d7fd37ffbc
+[SERVICE] Adding floor with number: 1
+[SERVICE] Floor added successfully: 8a6ed946-0b3d-4fe6-aabf-08deabe7439f
+[SERVICE] Adding floor with number: 2
+[SERVICE] Floor added successfully: 80ce0d6e-54f3-4468-a61b-85de2ae5077f
+[SERVICE] Adding 20 slots of type BIKE to floor 0
+[SERVICE] Added 20 slots to floor 0
+[SERVICE] Adding 30 slots of type CAR to floor 0
+[SERVICE] Added 30 slots to floor 0
+[SERVICE] Adding 5 slots of type TRUCK to floor 0
+[SERVICE] Added 5 slots to floor 0
+[SERVICE] Adding 40 slots of type CAR to floor 1
+[SERVICE] Added 40 slots to floor 1
+[SERVICE] Adding 10 slots of type EV to floor 1
+[SERVICE] Added 10 slots to floor 1
+[SERVICE] Adding 35 slots of type CAR to floor 2
+[SERVICE] Added 35 slots to floor 2
+[SERVICE] Adding 15 slots of type EV to floor 2
+[SERVICE] Added 15 slots to floor 2
+[REPOSITORY] Initializing default pricing rules
+[SERVICE] Parking lot initialization completed
+[CONTROLLER] Parking lot initialized successfully by admin
+[CONTROLLER] Admin request to get parking status
+[SERVICE] Getting parking lot status
+[SERVICE] Total floors: 3
+[SERVICE] Floor 2 has [ParkingSlot{id=cb53e30f-bcbd-4b15-bf09-199c086a8423, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=729b573e-24fd-4e1c-b97b-dec170626f7e, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=a4cd1fea-362f-4a13-b149-033bbd570eeb, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=0ee988cd-e636-47ac-b5ce-b20a8599b2f8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=c65bf82d-9c5e-40bc-ab1a-d0b437ecec8c, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e7e06151-89d4-4e2c-82e9-bcc6ffb42d34, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=7cd65bb8-4896-4926-9cd4-5bd4638c21c0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=00a3b3e4-fd99-452b-b674-0f83652291b4, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=af53e128-d4c1-4e92-8f1e-91ad19074301, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=6c598b87-4319-4cd8-bb70-d6c95e561433, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=b425af05-3115-4e88-a2ac-ddea8a63230d, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=9c8f8be9-8695-4e1a-a1c8-b43c7682c1fa, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=bba029bc-714e-4715-a2bc-fddd7cf0ccd8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=a23b3357-676a-4479-81c4-023c7198eea0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=dffef765-3d1e-491c-b692-210a3b0966e6, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=fe8d4738-882e-4041-907e-bf35bf15c458, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=9dd7ea81-1981-49dd-8401-51b2cf2deeb7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=65eaec3c-5bd5-456e-b58e-e902e8654bd2, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=293492ad-0d10-43b1-87ed-975f6e85f9b1, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=84d2edb8-7ea2-40fe-bafb-62cfbeb99af8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=d72a61ba-eefe-4e14-bdaa-e419ac8e96d0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e15a55fa-d3c5-4bc6-91a7-9e50162a5b6a, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e437a0e4-3cd5-4de0-a544-6aeaa71f0ef9, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=31dbf57f-d83f-4f5f-8c1d-1d9b85531f1f, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=c82382d3-af0a-4864-a5e0-7698aa42ae38, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=27790efd-2742-4fd4-8384-665866af20b4, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=dce95ec4-cb14-4773-a7e3-cc3b1f10a9c7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=b505219d-b59d-49c9-b65c-c3db771f1a9d, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=80088db1-c253-4e4e-94fc-658cfbdf8bc8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=11df5d84-9936-46f0-9805-b6939380115b, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e9fcf893-e619-401f-ad04-80e7b857e007, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=3c10b6fb-6ad5-40a4-b039-aa1650e9f2d6, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=7f2c96ac-9ae9-4b84-806b-534cb8a5a6ec, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=26e62ded-82e7-4591-b202-3a96735fd432, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=54ec2e54-a0c6-4f15-811b-cb033e4c49e7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=4682d5d6-ebd1-4020-9536-6c557680f925, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=0ce9b2b3-f09f-4e52-8cd8-ef051aa9d569, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=b5f2e2d1-4661-441b-ad72-f868d0aeac0e, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=b634b75a-2458-4a3f-bbb2-f239e2d801d0, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=c8d97606-d43c-465b-b615-e887838069ac, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=405a640c-c36a-49f6-95a4-5cdb58be8a82, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=ca76d75b-00e7-4f6d-a94e-dba9a210d143, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=3831dbc8-f385-4e84-8d07-b16ac8987137, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=d6cc85e7-2d1f-4fe5-8cb7-b97caf62d246, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=158d19ae-198c-4400-9538-01addc13b912, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=fc4345e7-8af9-46a2-866a-b2cc5b7656c2, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=093feba3-aef2-4f03-965c-6232c95c03ab, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=5dad6cbf-b339-4641-85f3-4d8a2861cdb5, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=70350abf-0b6a-48ac-b10f-a4c61d154ed6, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=9e788e78-52de-4a51-b605-95944851eb57, slotType=EV, isOccupied=false, floorNumber=2}] slots
+[SERVICE] Floor 1 has [ParkingSlot{id=04ee07df-52ea-43d2-9f91-86ad2d64b127, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=8d68e74f-9ee3-41df-a11f-0a2068138479, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=ad660c25-2a4f-402f-81f7-aefbb64d9202, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=9981b1e6-1a59-4a5f-a6e9-c2e4bdfc0131, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=b147c478-69ab-4fb9-b151-0604d5dba0dd, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=82f9e39c-7f4f-4f22-88ba-5ef07220f332, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=5814252f-141f-4680-9d76-e1298205ae77, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=78de5326-d716-48ea-bc6b-38228a8dcd7f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=fb6bc294-69d0-4e95-a4b1-74d2c7232bed, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=157afe16-4680-4dd5-a6f9-853eadbae805, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=024b14c2-eefa-4b06-aec3-326b19c104da, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=dff342e5-ac4f-4b93-8f4f-d919c2761113, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=182d4980-d4f6-47bf-b4ac-38d91c71f94e, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=cd0b0f6c-f388-4f17-bc6d-f7bd389d5d59, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=81bcf31c-b00a-4274-a88f-e22bd78b59e6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=a69fa7b8-528c-4623-9ecc-bbefe828287c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2fade0b8-5989-460d-9c3f-a5c1552e02bf, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=730ad3e4-d511-45b1-ac96-e29d08904cf6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2c1d373b-88c1-444e-843b-936900277751, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=9c58c0bf-bcf0-4565-a4b5-7ab7ca20b0e4, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=bed0b3b1-ee52-42a6-a220-4311d46d0efa, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=762d61c9-7c66-43bf-8531-ddb524b1a728, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2b08ff60-c2ff-40f3-ae41-6212499af06b, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=6a9ec0af-9fb3-4564-9b80-ead21a29aae6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3f7a712a-48ab-4102-b56b-b05e326cb98c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3b86b0a6-be90-4d39-a5ea-37d18038e876, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=1ead179a-c5ce-43c3-86fb-ed66d404820f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=c8674518-0da5-476b-b0ce-ee3b05037903, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=281497c4-cf73-4c6d-84f0-5850239747d5, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=298876bd-2cd5-49d1-8081-2cab5d933093, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=a40152ae-a37b-466a-98fc-5e85d7ba8729, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=15aca3f5-78f0-4314-a112-051fd665b63f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=0a7ea1a1-b8af-465c-b6c1-c88e5fb3517f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3847be29-004a-483c-8409-9e8239e49a01, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=f9b1d450-513f-48e7-a3f3-4d418d7ccfcf, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=1a85ac2f-aa70-43cb-962d-84339ed5c7f2, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=027f1621-3a13-4d80-b710-b7bb42917e3c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3f905e48-19b3-4de0-a7ad-88632726a702, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=ad29fd5e-42f1-4221-8c6c-f1fb08dc890d, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=85f7e55a-4af7-49b5-b70a-bdced1545ec3, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=99143cbb-7bb4-4b62-a7bf-89d64ce21ea3, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=1e8e05a7-f54b-4889-9aca-df79720fd201, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=2b78a940-41e8-4b73-bc3c-da0a9d4cf669, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=30b16bd1-c92a-439a-9333-8f69e1b32355, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=a8b81fa1-678d-4214-8cd4-248322486e5f, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=4536998c-666b-4e44-887e-baa440bf49eb, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=2322316d-51ce-4e81-b143-cdb35ee893b6, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=ff73e2cb-1997-49be-9c2d-bfa89268642b, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=cc4ae3f1-06bd-4c7f-b63c-4956bad247ec, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=910e06a2-65b5-4c57-8008-0045784f7b34, slotType=EV, isOccupied=false, floorNumber=1}] slots
+[SERVICE] Floor 0 has [ParkingSlot{id=c8a4c1df-be1b-463a-85c7-b2b77dd96386, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=56a79a2c-3dc6-44e1-9dea-c534f36ff9e3, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=85f44459-0e9c-47b2-a2e8-d4f84c106d56, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=695eb38b-0505-473a-8586-cec747f454f6, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=2510b02f-c74d-448d-ab8f-46dc1cb9b6db, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=24827bcf-c7e8-44f6-a7a3-cf4bd1e4ce84, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=4ae9364f-7932-4718-889d-0402f5b41dcd, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=076fe3d5-1f78-4952-a4cc-223698e34b02, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=899ba979-d3e1-48ff-b6d8-d0a5425cc089, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=f9437fe0-3748-4313-b753-c15acb87c270, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=348f43b7-91e1-48c3-aedc-8c6c76e1ee14, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=0de187ea-f97d-41e6-a162-73abc13924e7, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c97da57c-453f-4114-9d5c-df6b597d3e04, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=3d0d4e4b-94bf-4048-ab3a-678744e73e13, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=5dc184f7-27e7-4dca-9524-440412170e61, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=b424fd47-4480-4285-a900-8eab7a9985a3, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c7e5578c-f550-48dc-bad4-3751abc7ac53, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=7896d30c-704c-46e9-93bb-1d963171229c, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=ef4dfb54-6dda-4613-9632-41950c623f18, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c9bd35f6-5cba-464c-a04d-a31a9fc0b197, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=6447f1e7-c89d-4a77-a740-c90995db4e08, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=0db56217-bbb8-4bf2-b1c6-2603cd86c331, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=72ed36f3-b5c5-4b55-9640-fffb28a18140, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=d93427de-9537-44f2-9ce7-a4418657db46, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=750df557-8a61-4eb5-857e-5825343e8b17, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=657c59e3-d503-4644-8f50-555f1b7af21f, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fce831e0-2617-425e-8360-6a9ee4d69abf, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=30305a90-e963-406f-91c7-8a0f0ad60b13, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=a4fe626b-196d-4bac-8a88-e65417a17819, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=0847d1bd-e906-4a6e-9d16-efb2f16309ca, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=41571b38-3804-493c-848c-fd405e67ba08, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=9c9c3166-c268-414f-ba5d-a9997cf0678d, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=51a819d0-51f2-4dce-ba0d-7a56d9ede110, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fa62c79b-e5b6-4170-998c-229ce5d1c6e6, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=e789eabf-d48c-4638-9ee9-4e6600d319b5, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=81097dac-e244-4a93-9b8f-6358b5fb2e43, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=17f556c4-0592-421a-b47a-f112072fa1f1, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=aba075ad-eed1-46b3-ba2c-8224abc194c9, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=42b86d48-8b77-446d-9cbc-0c12ecd9903b, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=dfb14da7-1cd6-4f71-a2cf-658cd1c1d715, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=98a4ff1d-ac12-4de4-96bc-2851a5ee5648, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fdefb10c-0508-4b73-aa68-a7e8753393f3, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=90858755-2501-4026-bfd4-ee908436c619, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=9d1d15c2-fc2c-4fc7-a3d4-b4c3d6719aaa, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=5c148267-8355-41b5-8f59-6f8521a7651a, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=12fb9d8b-141a-48b3-a049-de3d2213a625, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=c01567aa-e6eb-4477-885c-1fb835368435, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=5e1d9484-58f5-41c7-8c8a-07959ba6d239, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=001d4984-9ce9-4c5e-8923-49b39cd57596, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=705ab90d-cc41-4dbe-91eb-8229c6c1f7f8, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=7dd9b442-df2b-4cef-b913-fc85347307b5, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=d36e5622-dc26-4bfb-8610-dc1cbc5e93fa, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=33ecf3be-a904-4b3c-8e64-77697da2df9f, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=a70b21f3-e035-4d74-ad64-b9163f032511, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=7393d94a-10ec-468f-bb7b-a28912c35950, slotType=TRUCK, isOccupied=false, floorNumber=0}] slots
+[SERVICE] Slot statistics: {BIKE=20, TRUCK=5, CAR=105, EV=25}
+[CONTROLLER] Parking status retrieved successfully by admin
+
+=== ENTRY FLOW SIMULATION ===
+
+--- Vehicle Entry Simulation ---
+[CONTROLLER] Vehicle entry request - License: ABC123, Type: CAR
+[CONTROLLER] Vehicle created: ef4f8190-2210-41eb-9e82-4dc6571ff377
+[SERVICE] Allocating slot for vehicle type: CAR
+[SERVICE] Slot allocated successfully: 98a4ff1d-ac12-4de4-96bc-2851a5ee5648
+[SERVICE] Generating ticket for vehicle: ABC123
+[SERVICE] Ticket generated successfully: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[CONTROLLER] Vehicle entry successful - Ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e, Slot: 98a4ff1d-ac12-4de4-96bc-2851a5ee5648
+✅ Entry successful - Ticket ID: ee86f8b5-6e2d-41ee-af06-2290447d711e
+
+--- Vehicle Entry Simulation ---
+[CONTROLLER] Vehicle entry request - License: XYZ789, Type: BIKE
+[CONTROLLER] Vehicle created: d8543652-57ea-4fa7-9fdb-ca02429f3b16
+[SERVICE] Allocating slot for vehicle type: BIKE
+[SERVICE] Slot allocated successfully: f9437fe0-3748-4313-b753-c15acb87c270
+[SERVICE] Generating ticket for vehicle: XYZ789
+[SERVICE] Ticket generated successfully: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[CONTROLLER] Vehicle entry successful - Ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1, Slot: f9437fe0-3748-4313-b753-c15acb87c270
+✅ Entry successful - Ticket ID: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+
+--- Vehicle Entry Simulation ---
+[CONTROLLER] Vehicle entry request - License: DEF456, Type: TRUCK
+[CONTROLLER] Vehicle created: d5f5ea40-29a0-435c-a98f-f21ab9239580
+[SERVICE] Allocating slot for vehicle type: TRUCK
+[SERVICE] Slot allocated successfully: 7dd9b442-df2b-4cef-b913-fc85347307b5
+[SERVICE] Generating ticket for vehicle: DEF456
+[SERVICE] Ticket generated successfully: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[CONTROLLER] Vehicle entry successful - Ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b, Slot: 7dd9b442-df2b-4cef-b913-fc85347307b5
+✅ Entry successful - Ticket ID: dd061f46-c2e1-4947-9951-d346b9e6db0b
+
+=== EXIT FLOW SIMULATION ===
+[REPOSITORY] Found 3 active tickets
+
+--- Vehicle Exit Simulation ---
+[CONTROLLER] Vehicle exit request - Ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Retrieving ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Calculating fee for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[CONTROLLER] Fee calculated: 20.0
+[SERVICE] Processing payment with retry for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Payment attempt 1 of 3
+[SERVICE] Processing payment for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e amount: 20.0
+[ADAPTER] RazorpayAdapter processing payment for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e amount: 20.0
+[ADAPTER] RazorpayAdapter payment result: SUCCESS
+[SERVICE] Payment processed with status: SUCCESS
+[SERVICE] Payment successful on attempt 1
+[SERVICE] Generating receipt for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Receipt generated: 92285fdc-384c-4bb7-b832-8d95ab276bd8 with fee: 20.0
+[SERVICE] Marking receipt as paid: 92285fdc-384c-4bb7-b832-8d95ab276bd8
+[SERVICE] Receipt marked as paid successfully
+[SERVICE] Releasing Slot: 98a4ff1d-ac12-4de4-96bc-2851a5ee5648
+[SERVICE] Slot released successfully: 98a4ff1d-ac12-4de4-96bc-2851a5ee5648
+[SERVICE] Deactivating ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[CONTROLLER] Vehicle exit successful - Receipt: 92285fdc-384c-4bb7-b832-8d95ab276bd8
+✅ Exit successful - Receipt ID: 92285fdc-384c-4bb7-b832-8d95ab276bd8
+💰 Total Fee: $20.00
+💳 Payment Status: SUCCESS
+[CONTROLLER] Generating receipt text for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Retrieving ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Calculating fee for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[SERVICE] Generating receipt for ticket: ee86f8b5-6e2d-41ee-af06-2290447d711e
+[SERVICE] Receipt generated: ac442646-ef2d-4007-a589-473ea017d160 with fee: 20.0
+[SERVICE] Generating receipt text for: ac442646-ef2d-4007-a589-473ea017d160
+[SERVICE] Receipt text generated successfully
+[CONTROLLER] Receipt text generated successfully
+📄 Receipt:
+=== PARKING RECEIPT ===
+Receipt ID: ac442646-ef2d-4007-a589-473ea017d160
+Ticket ID: ee86f8b5-6e2d-41ee-af06-2290447d711e
+Vehicle: DUMMY-ee86f8b5-6e2d-41ee-af06-2290447d711e (CAR)
+Entry Time: 2025-08-16T11:10:24.874917700
+Exit Time: 2025-08-16T11:10:25.016407700
+Total Fee: $20.00
+Payment Status: PENDING
+=====================
+
+
+--- Vehicle Exit Simulation ---
+[CONTROLLER] Vehicle exit request - Ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Retrieving ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Calculating fee for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[CONTROLLER] Fee calculated: 20.0
+[SERVICE] Processing payment with retry for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Payment attempt 1 of 3
+[SERVICE] Processing payment for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1 amount: 20.0
+[ADAPTER] RazorpayAdapter processing payment for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1 amount: 20.0
+[ADAPTER] RazorpayAdapter payment result: FAILED
+[SERVICE] Payment processed with status: FAILED
+[SERVICE] Payment attempt 2 of 3
+[SERVICE] Processing payment for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1 amount: 20.0
+[ADAPTER] RazorpayAdapter processing payment for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1 amount: 20.0
+[ADAPTER] RazorpayAdapter payment result: SUCCESS
+[SERVICE] Payment processed with status: SUCCESS
+[SERVICE] Payment successful on attempt 2
+[SERVICE] Generating receipt for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Receipt generated: 9f2924dc-be0e-4ede-b910-69a18c64fc46 with fee: 20.0
+[SERVICE] Marking receipt as paid: 9f2924dc-be0e-4ede-b910-69a18c64fc46
+[SERVICE] Receipt marked as paid successfully
+[SERVICE] Releasing Slot: f9437fe0-3748-4313-b753-c15acb87c270
+[SERVICE] Slot released successfully: f9437fe0-3748-4313-b753-c15acb87c270
+[SERVICE] Deactivating ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[CONTROLLER] Vehicle exit successful - Receipt: 9f2924dc-be0e-4ede-b910-69a18c64fc46
+✅ Exit successful - Receipt ID: 9f2924dc-be0e-4ede-b910-69a18c64fc46
+💰 Total Fee: $20.00
+💳 Payment Status: SUCCESS
+[CONTROLLER] Generating receipt text for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Retrieving ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Calculating fee for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[SERVICE] Generating receipt for ticket: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+[SERVICE] Receipt generated: 0413160b-daba-4d80-85aa-08f7fa464f8c with fee: 20.0
+[SERVICE] Generating receipt text for: 0413160b-daba-4d80-85aa-08f7fa464f8c
+[SERVICE] Receipt text generated successfully
+[CONTROLLER] Receipt text generated successfully
+📄 Receipt:
+=== PARKING RECEIPT ===
+Receipt ID: 0413160b-daba-4d80-85aa-08f7fa464f8c
+Ticket ID: 8745aa8e-5207-49a3-a31c-1bb6150c99d1
+Vehicle: DUMMY-8745aa8e-5207-49a3-a31c-1bb6150c99d1 (CAR)
+Entry Time: 2025-08-16T11:10:24.875891500
+Exit Time: 2025-08-16T11:10:25.020408400
+Total Fee: $20.00
+Payment Status: PENDING
+=====================
+
+
+--- Vehicle Exit Simulation ---
+[CONTROLLER] Vehicle exit request - Ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Retrieving ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Calculating fee for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[CONTROLLER] Fee calculated: 20.0
+[SERVICE] Processing payment with retry for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Payment attempt 1 of 3
+[SERVICE] Processing payment for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b amount: 20.0
+[ADAPTER] RazorpayAdapter processing payment for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b amount: 20.0
+[ADAPTER] RazorpayAdapter payment result: SUCCESS
+[SERVICE] Payment processed with status: SUCCESS
+[SERVICE] Payment successful on attempt 1
+[SERVICE] Generating receipt for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Receipt generated: 3afa0d9a-4ba6-4206-b20e-7e668f36d840 with fee: 20.0
+[SERVICE] Marking receipt as paid: 3afa0d9a-4ba6-4206-b20e-7e668f36d840
+[SERVICE] Receipt marked as paid successfully
+[SERVICE] Releasing Slot: 7dd9b442-df2b-4cef-b913-fc85347307b5
+[SERVICE] Slot released successfully: 7dd9b442-df2b-4cef-b913-fc85347307b5
+[SERVICE] Deactivating ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[CONTROLLER] Vehicle exit successful - Receipt: 3afa0d9a-4ba6-4206-b20e-7e668f36d840
+✅ Exit successful - Receipt ID: 3afa0d9a-4ba6-4206-b20e-7e668f36d840
+💰 Total Fee: $20.00
+💳 Payment Status: SUCCESS
+[CONTROLLER] Generating receipt text for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Retrieving ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Calculating fee for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Flat fee: 60.0, Hourly fee: 20.0, Final fee: 20.0 for vehicle type: CAR
+[SERVICE] Generating receipt for ticket: dd061f46-c2e1-4947-9951-d346b9e6db0b
+[SERVICE] Receipt generated: 16c6fb12-548c-4725-878d-a958d3cb6ca4 with fee: 20.0
+[SERVICE] Generating receipt text for: 16c6fb12-548c-4725-878d-a958d3cb6ca4
+[SERVICE] Receipt text generated successfully
+[CONTROLLER] Receipt text generated successfully
+📄 Receipt:
+=== PARKING RECEIPT ===
+Receipt ID: 16c6fb12-548c-4725-878d-a958d3cb6ca4
+Ticket ID: dd061f46-c2e1-4947-9951-d346b9e6db0b
+Vehicle: DUMMY-dd061f46-c2e1-4947-9951-d346b9e6db0b (CAR)
+Entry Time: 2025-08-16T11:10:24.876888600
+Exit Time: 2025-08-16T11:10:25.021409800
+Total Fee: $20.00
+Payment Status: PENDING
+=====================
+
+
+=== ADMIN OPERATIONS SIMULATION ===
+
+--- Admin Operations Simulation ---
+[CONTROLLER] Admin request to add floor: 3
+[SERVICE] Adding floor with number: 3
+[SERVICE] Floor added successfully: 3a2127b0-3e52-4824-a777-a82f1fdfac9e
+[CONTROLLER] Floor added successfully by admin
+[CONTROLLER] Admin request to add 10 CAR slots to floor 3
+[SERVICE] Adding 10 slots of type CAR to floor 3
+[SERVICE] Added 10 slots to floor 3
+[CONTROLLER] Slots added successfully by admin
+[CONTROLLER] Admin request to add 5 EV slots to floor 3
+[SERVICE] Adding 5 slots of type EV to floor 3
+[SERVICE] Added 5 slots to floor 3
+[CONTROLLER] Slots added successfully by admin
+[CONTROLLER] Admin request to update pricing for CAR
+[SERVICE] Updating pricing rule for CAR
+[SERVICE] Pricing rule updated successfully
+[CONTROLLER] Pricing rule updated successfully by admin
+[CONTROLLER] Admin request to update flat pricing for BIKE to 35.0
+[SERVICE] Updating flat pricing for BIKE to 35.0
+[SERVICE] Flat pricing updated successfully
+[CONTROLLER] Flat pricing updated successfully by admin
+[CONTROLLER] Admin request to update hourly pricing for TRUCK to 40.0
+[SERVICE] Updating hourly pricing for TRUCK to 40.0
+[SERVICE] Hourly pricing updated successfully
+[CONTROLLER] Hourly pricing updated successfully by admin
+[CONTROLLER] Admin request to add new pricing rule for EV
+[SERVICE] Adding new pricing rule for EV
+[SERVICE] Pricing rule added successfully
+[CONTROLLER] Pricing rule added successfully by admin
+✅ Admin operations completed successfully
+
+=== FINAL STATUS ===
+[CONTROLLER] Admin request to get parking status
+[SERVICE] Getting parking lot status
+[SERVICE] Total floors: 4
+[SERVICE] Floor 2 has [ParkingSlot{id=cb53e30f-bcbd-4b15-bf09-199c086a8423, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=729b573e-24fd-4e1c-b97b-dec170626f7e, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=a4cd1fea-362f-4a13-b149-033bbd570eeb, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=0ee988cd-e636-47ac-b5ce-b20a8599b2f8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=c65bf82d-9c5e-40bc-ab1a-d0b437ecec8c, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e7e06151-89d4-4e2c-82e9-bcc6ffb42d34, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=7cd65bb8-4896-4926-9cd4-5bd4638c21c0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=00a3b3e4-fd99-452b-b674-0f83652291b4, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=af53e128-d4c1-4e92-8f1e-91ad19074301, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=6c598b87-4319-4cd8-bb70-d6c95e561433, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=b425af05-3115-4e88-a2ac-ddea8a63230d, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=9c8f8be9-8695-4e1a-a1c8-b43c7682c1fa, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=bba029bc-714e-4715-a2bc-fddd7cf0ccd8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=a23b3357-676a-4479-81c4-023c7198eea0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=dffef765-3d1e-491c-b692-210a3b0966e6, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=fe8d4738-882e-4041-907e-bf35bf15c458, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=9dd7ea81-1981-49dd-8401-51b2cf2deeb7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=65eaec3c-5bd5-456e-b58e-e902e8654bd2, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=293492ad-0d10-43b1-87ed-975f6e85f9b1, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=84d2edb8-7ea2-40fe-bafb-62cfbeb99af8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=d72a61ba-eefe-4e14-bdaa-e419ac8e96d0, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e15a55fa-d3c5-4bc6-91a7-9e50162a5b6a, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e437a0e4-3cd5-4de0-a544-6aeaa71f0ef9, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=31dbf57f-d83f-4f5f-8c1d-1d9b85531f1f, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=c82382d3-af0a-4864-a5e0-7698aa42ae38, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=27790efd-2742-4fd4-8384-665866af20b4, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=dce95ec4-cb14-4773-a7e3-cc3b1f10a9c7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=b505219d-b59d-49c9-b65c-c3db771f1a9d, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=80088db1-c253-4e4e-94fc-658cfbdf8bc8, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=11df5d84-9936-46f0-9805-b6939380115b, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=e9fcf893-e619-401f-ad04-80e7b857e007, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=3c10b6fb-6ad5-40a4-b039-aa1650e9f2d6, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=7f2c96ac-9ae9-4b84-806b-534cb8a5a6ec, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=26e62ded-82e7-4591-b202-3a96735fd432, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=54ec2e54-a0c6-4f15-811b-cb033e4c49e7, slotType=CAR, isOccupied=false, floorNumber=2}, ParkingSlot{id=4682d5d6-ebd1-4020-9536-6c557680f925, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=0ce9b2b3-f09f-4e52-8cd8-ef051aa9d569, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=b5f2e2d1-4661-441b-ad72-f868d0aeac0e, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=b634b75a-2458-4a3f-bbb2-f239e2d801d0, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=c8d97606-d43c-465b-b615-e887838069ac, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=405a640c-c36a-49f6-95a4-5cdb58be8a82, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=ca76d75b-00e7-4f6d-a94e-dba9a210d143, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=3831dbc8-f385-4e84-8d07-b16ac8987137, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=d6cc85e7-2d1f-4fe5-8cb7-b97caf62d246, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=158d19ae-198c-4400-9538-01addc13b912, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=fc4345e7-8af9-46a2-866a-b2cc5b7656c2, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=093feba3-aef2-4f03-965c-6232c95c03ab, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=5dad6cbf-b339-4641-85f3-4d8a2861cdb5, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=70350abf-0b6a-48ac-b10f-a4c61d154ed6, slotType=EV, isOccupied=false, floorNumber=2}, ParkingSlot{id=9e788e78-52de-4a51-b605-95944851eb57, slotType=EV, isOccupied=false, floorNumber=2}] slots
+[SERVICE] Floor 1 has [ParkingSlot{id=04ee07df-52ea-43d2-9f91-86ad2d64b127, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=8d68e74f-9ee3-41df-a11f-0a2068138479, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=ad660c25-2a4f-402f-81f7-aefbb64d9202, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=9981b1e6-1a59-4a5f-a6e9-c2e4bdfc0131, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=b147c478-69ab-4fb9-b151-0604d5dba0dd, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=82f9e39c-7f4f-4f22-88ba-5ef07220f332, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=5814252f-141f-4680-9d76-e1298205ae77, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=78de5326-d716-48ea-bc6b-38228a8dcd7f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=fb6bc294-69d0-4e95-a4b1-74d2c7232bed, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=157afe16-4680-4dd5-a6f9-853eadbae805, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=024b14c2-eefa-4b06-aec3-326b19c104da, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=dff342e5-ac4f-4b93-8f4f-d919c2761113, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=182d4980-d4f6-47bf-b4ac-38d91c71f94e, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=cd0b0f6c-f388-4f17-bc6d-f7bd389d5d59, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=81bcf31c-b00a-4274-a88f-e22bd78b59e6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=a69fa7b8-528c-4623-9ecc-bbefe828287c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2fade0b8-5989-460d-9c3f-a5c1552e02bf, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=730ad3e4-d511-45b1-ac96-e29d08904cf6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2c1d373b-88c1-444e-843b-936900277751, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=9c58c0bf-bcf0-4565-a4b5-7ab7ca20b0e4, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=bed0b3b1-ee52-42a6-a220-4311d46d0efa, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=762d61c9-7c66-43bf-8531-ddb524b1a728, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=2b08ff60-c2ff-40f3-ae41-6212499af06b, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=6a9ec0af-9fb3-4564-9b80-ead21a29aae6, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3f7a712a-48ab-4102-b56b-b05e326cb98c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3b86b0a6-be90-4d39-a5ea-37d18038e876, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=1ead179a-c5ce-43c3-86fb-ed66d404820f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=c8674518-0da5-476b-b0ce-ee3b05037903, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=281497c4-cf73-4c6d-84f0-5850239747d5, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=298876bd-2cd5-49d1-8081-2cab5d933093, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=a40152ae-a37b-466a-98fc-5e85d7ba8729, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=15aca3f5-78f0-4314-a112-051fd665b63f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=0a7ea1a1-b8af-465c-b6c1-c88e5fb3517f, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3847be29-004a-483c-8409-9e8239e49a01, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=f9b1d450-513f-48e7-a3f3-4d418d7ccfcf, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=1a85ac2f-aa70-43cb-962d-84339ed5c7f2, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=027f1621-3a13-4d80-b710-b7bb42917e3c, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=3f905e48-19b3-4de0-a7ad-88632726a702, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=ad29fd5e-42f1-4221-8c6c-f1fb08dc890d, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=85f7e55a-4af7-49b5-b70a-bdced1545ec3, slotType=CAR, isOccupied=false, floorNumber=1}, ParkingSlot{id=99143cbb-7bb4-4b62-a7bf-89d64ce21ea3, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=1e8e05a7-f54b-4889-9aca-df79720fd201, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=2b78a940-41e8-4b73-bc3c-da0a9d4cf669, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=30b16bd1-c92a-439a-9333-8f69e1b32355, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=a8b81fa1-678d-4214-8cd4-248322486e5f, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=4536998c-666b-4e44-887e-baa440bf49eb, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=2322316d-51ce-4e81-b143-cdb35ee893b6, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=ff73e2cb-1997-49be-9c2d-bfa89268642b, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=cc4ae3f1-06bd-4c7f-b63c-4956bad247ec, slotType=EV, isOccupied=false, floorNumber=1}, ParkingSlot{id=910e06a2-65b5-4c57-8008-0045784f7b34, slotType=EV, isOccupied=false, floorNumber=1}] slots
+[SERVICE] Floor 0 has [ParkingSlot{id=c8a4c1df-be1b-463a-85c7-b2b77dd96386, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=56a79a2c-3dc6-44e1-9dea-c534f36ff9e3, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=85f44459-0e9c-47b2-a2e8-d4f84c106d56, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=695eb38b-0505-473a-8586-cec747f454f6, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=2510b02f-c74d-448d-ab8f-46dc1cb9b6db, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=24827bcf-c7e8-44f6-a7a3-cf4bd1e4ce84, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=4ae9364f-7932-4718-889d-0402f5b41dcd, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=076fe3d5-1f78-4952-a4cc-223698e34b02, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=899ba979-d3e1-48ff-b6d8-d0a5425cc089, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=f9437fe0-3748-4313-b753-c15acb87c270, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=348f43b7-91e1-48c3-aedc-8c6c76e1ee14, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=0de187ea-f97d-41e6-a162-73abc13924e7, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c97da57c-453f-4114-9d5c-df6b597d3e04, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=3d0d4e4b-94bf-4048-ab3a-678744e73e13, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=5dc184f7-27e7-4dca-9524-440412170e61, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=b424fd47-4480-4285-a900-8eab7a9985a3, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c7e5578c-f550-48dc-bad4-3751abc7ac53, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=7896d30c-704c-46e9-93bb-1d963171229c, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=ef4dfb54-6dda-4613-9632-41950c623f18, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=c9bd35f6-5cba-464c-a04d-a31a9fc0b197, slotType=BIKE, isOccupied=false, floorNumber=0}, ParkingSlot{id=6447f1e7-c89d-4a77-a740-c90995db4e08, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=0db56217-bbb8-4bf2-b1c6-2603cd86c331, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=72ed36f3-b5c5-4b55-9640-fffb28a18140, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=d93427de-9537-44f2-9ce7-a4418657db46, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=750df557-8a61-4eb5-857e-5825343e8b17, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=657c59e3-d503-4644-8f50-555f1b7af21f, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fce831e0-2617-425e-8360-6a9ee4d69abf, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=30305a90-e963-406f-91c7-8a0f0ad60b13, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=a4fe626b-196d-4bac-8a88-e65417a17819, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=0847d1bd-e906-4a6e-9d16-efb2f16309ca, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=41571b38-3804-493c-848c-fd405e67ba08, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=9c9c3166-c268-414f-ba5d-a9997cf0678d, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=51a819d0-51f2-4dce-ba0d-7a56d9ede110, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fa62c79b-e5b6-4170-998c-229ce5d1c6e6, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=e789eabf-d48c-4638-9ee9-4e6600d319b5, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=81097dac-e244-4a93-9b8f-6358b5fb2e43, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=17f556c4-0592-421a-b47a-f112072fa1f1, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=aba075ad-eed1-46b3-ba2c-8224abc194c9, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=42b86d48-8b77-446d-9cbc-0c12ecd9903b, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=dfb14da7-1cd6-4f71-a2cf-658cd1c1d715, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=98a4ff1d-ac12-4de4-96bc-2851a5ee5648, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=fdefb10c-0508-4b73-aa68-a7e8753393f3, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=90858755-2501-4026-bfd4-ee908436c619, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=9d1d15c2-fc2c-4fc7-a3d4-b4c3d6719aaa, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=5c148267-8355-41b5-8f59-6f8521a7651a, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=12fb9d8b-141a-48b3-a049-de3d2213a625, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=c01567aa-e6eb-4477-885c-1fb835368435, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=5e1d9484-58f5-41c7-8c8a-07959ba6d239, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=001d4984-9ce9-4c5e-8923-49b39cd57596, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=705ab90d-cc41-4dbe-91eb-8229c6c1f7f8, slotType=CAR, isOccupied=false, floorNumber=0}, ParkingSlot{id=7dd9b442-df2b-4cef-b913-fc85347307b5, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=d36e5622-dc26-4bfb-8610-dc1cbc5e93fa, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=33ecf3be-a904-4b3c-8e64-77697da2df9f, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=a70b21f3-e035-4d74-ad64-b9163f032511, slotType=TRUCK, isOccupied=false, floorNumber=0}, ParkingSlot{id=7393d94a-10ec-468f-bb7b-a28912c35950, slotType=TRUCK, isOccupied=false, floorNumber=0}] slots
+[SERVICE] Floor 3 has [ParkingSlot{id=cf00f5eb-7d81-4bb1-ba76-9cea57e35489, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=6ee236f3-a224-4206-9acd-fb77385d512c, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=949c9cac-5887-48ce-99ee-60d07645b169, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=61913fd7-1ac7-4110-88e6-1da51beafd63, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=f53c3b65-1673-46d9-a784-a05e64e0a0ca, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=cad95db8-f5c3-426d-ac08-2e51a8d9cfd1, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=8780612c-4ab5-4427-9a6e-11dab792eaba, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=aed85aa6-c253-408e-bc4c-9e34d9451326, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=b8cd7663-3bc5-4337-b8da-fb9903708c2f, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=8d8eb684-b515-4c17-a172-00ad228ed97e, slotType=CAR, isOccupied=false, floorNumber=3}, ParkingSlot{id=eefa3fd3-9424-433c-a66a-de61a2a5b302, slotType=EV, isOccupied=false, floorNumber=3}, ParkingSlot{id=9c98fe37-11f8-4593-ab12-e4305d2d94b3, slotType=EV, isOccupied=false, floorNumber=3}, ParkingSlot{id=1d8b2a8d-f4d6-4c79-83c0-f2a05c0954c6, slotType=EV, isOccupied=false, floorNumber=3}, ParkingSlot{id=b8224c83-6e0b-47b6-b92e-fd22e006b48c, slotType=EV, isOccupied=false, floorNumber=3}, ParkingSlot{id=c8b86f7a-d9dc-490e-969c-4c49c0f32f21, slotType=EV, isOccupied=false, floorNumber=3}] slots
+[SERVICE] Slot statistics: {BIKE=20, TRUCK=5, CAR=115, EV=30}
+[CONTROLLER] Parking status retrieved successfully by admin
+
+=== SIMULATION COMPLETED ===
